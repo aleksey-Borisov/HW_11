@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Библиотека Книг</title>
+		<link rel="stylesheet" href="styles.css" />
+		<style>
+			.library {
+				display: inline-block;
+				vertical-align: top;
+				width: 45%;
+				margin: 0 2%;
+			}
+
+			.book {
+				border: 1px solid #333;
+				padding: 10px;
+				margin: 5px 0;
+				cursor: pointer;
+				transition: all 0.3s;
+			}
+
+			.title {
+				font-weight: bold;
+				font-size: 1.2em;
+				color: green;
+			}
+
+			.author {
+				color: #555;
+			}
+
+			#library-1 .book {
+				background-color: #ffffcc;
+			}
+
+			#library-2 .book {
+				background-color: #e6f7ff;
+			}
+
+			h2 {
+				text-align: center;
+			}
+
+			.library-container {
+				margin-top: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Моя Собственная Библиотека</h1>
+
+		<div class="library-container">
+			<div id="library-1" class="library">
+				<h2>Основная библиотека</h2>
+				<div id="book-list">
+					<div class="book">
+						<div class="title">Война и мир</div>
+						<div class="author">Лев Толстой</div>
+					</div>
+					<div class="book">
+						<div class="title">Мастер и Маргарита</div>
+						<div class="author">Михаил Булгаков</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="library-2" class="library">
+				<h2>Резервная библиотека</h2>
+				<div id="book-list-2">
+					<div class="book">
+						<div class="title">1984</div>
+						<div class="author">Джордж Оруэлл</div>
+					</div>
+					<div class="book">
+						<div class="title">Убить пересмешника</div>
+						<div class="author">Харпер Ли</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="task5.js"></script>
+	</body>
+</html>
